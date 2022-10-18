@@ -1,7 +1,10 @@
 <?php 
+require 'vendor/autoload.php';
+use CowSay\Cow;
 
-require '/home/byzirtox/Quetes Composer - 2 PSR-4 & Autoload/src/app/Hello.php';
-
-$Hello = new Hello();
-
-$Hello->talk();
+$bessie = new Cow('Hello, Wilder! Sorry, I pooo ');
+$bessie->setEyes('oO')
+    ->setTongue('U')
+    ->setPoop('@@@')
+    ->setUdder('W');
+echo $bessie;
